@@ -83,7 +83,7 @@ body {
 footer {
   grid-area: footer;
   color: var(--gray);
-  border-top: 1px solid var(--black);
+  border-top: 1px solid var(--gray);
   padding-top: 2em;
   font-family: var(--type-mono);
   font-size: 0.875em;
@@ -140,9 +140,10 @@ a {
   color: var(--link-color);
 }
 
-footer a {
+footer a, footer .link {
   color: inherit;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 section {
@@ -218,7 +219,13 @@ p:not(:last-of-type) {
 }
 
 @media print {
+  @page { size: landscape }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
   body {
     font-size: 10px;
   }
 }
+
