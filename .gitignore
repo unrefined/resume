@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+
+# production
+/dist
+/build
+/lib
+
+# misc
+.DS_Store
+
+# editors
+.idea/
