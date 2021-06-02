@@ -3,7 +3,7 @@
   --white: #ffffff;
   --black: #333333;
   --gray: #878787;
-  --blue: #1e90ff;
+  --blue: #2991f6;
   --green: #4b9f9b;
   --purple: #bd86bf;
   --orange: #f8bb3c;
@@ -15,6 +15,8 @@
 
   --body-bg: var(--white);
   --body-color: var(--black);
+  --pie-color: var(--purple);
+  --link-color: var(--blue);
 }
 
 /* Dark Theme overrides */
@@ -44,6 +46,7 @@ body {
   background-color: var(--body-bg);
   color: var(--body-color);
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.4;
 }
 
@@ -119,7 +122,6 @@ h3 {
 h4 {
   font-family: var(--type-mono);
   font-size: 0.875em;
-  font-weight: 400;
   color: var(--gray);
   margin-bottom: 0.25em;
 }
@@ -130,9 +132,17 @@ blockquote {
   font-size: 0.875em;
   color: var(--gray);
   font-style: italic;
-  font-weight: 400;
   line-height: 1.5;
   font-family: var(--type-mono);
+}
+
+a {
+  color: var(--link-color);
+}
+
+footer a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 section {
@@ -151,7 +161,7 @@ p:not(:last-of-type) {
   margin-bottom: 1em;
 }
 
-.skills ul {
+.skills {
   columns: 2;
   column-gap: 1em;
 }
@@ -160,13 +170,16 @@ p:not(:last-of-type) {
   display: flex;
   flex-direction: row;
   align-items: center;
-  line-height: 1.7;
+  margin-bottom: 0.25em;
   font-size: 0.875em;
-  font-weight: 400;
   font-family: var(--type-mono);
 }
 
-.pie::before {
+.accomplishments li {
+  margin-bottom: 1em;
+}
+
+[data-proficiency]::before {
   content: "";
   display: block;
   flex: 0 0 auto;
@@ -176,52 +189,32 @@ p:not(:last-of-type) {
   margin-right: 0.75em;
 }
 
-.pie-100::before {
-  background: var(--blue);
+[data-proficiency="100"]::before {
+  background: var(--pie-color);
 }
 
-.pie-90::before {
-  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 10%, var(--blue) 10%, var(--blue) 100%);
+[data-proficiency="90"]::before {
+  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 10%, var(--pie-color) 10%, var(--pie-color) 100%);
 }
 
-.pie-80::before {
+[data-proficiency="80"]::before {
   opacity: 0.9;
-  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 20%, var(--blue) 20%, var(--blue) 100%);
+  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 20%, var(--pie-color) 20%, var(--pie-color) 100%);
 }
 
-.pie-70::before {
+[data-proficiency="70"]::before {
   opacity: 0.75;
-  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 30%, var(--blue) 30%, var(--blue) 100%);
+  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 30%, var(--pie-color) 30%, var(--pie-color) 100%);
 }
 
-.pie-60::before {
+[data-proficiency="60"]::before {
   opacity: 0.6;
-  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 40%, var(--blue) 40%, var(--blue) 100%);
+  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 40%, var(--pie-color) 40%, var(--pie-color) 100%);
 }
 
-.pie-50::before {
+[data-proficiency="50"]::before {
   opacity: 0.45;
-  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 50%, var(--blue) 50%, var(--blue) 100%);
-}
-
-.references .wrap {
-  display: flex;
-  flex-direction: row;
-}
-
-.references .wrap article {
-  flex: 1 1 auto;
-  margin: 0;
-}
-
-.references h3 {
-  font-size: 1em;
-}
-
-.phone {
-  display: block;
-  font-size: 0.875em;
-  font-family: var(--type-mono);
+  background: conic-gradient(var(--body-bg) 0, var(--body-bg) 50%, var(--pie-color) 50%, var(--pie-color) 100%);
 }
 
 @media print {

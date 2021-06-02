@@ -10,12 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <script>
+      const switchTheme = () => {
+        document.body.className = document.body.className === '' ? 'dark' : '';
+    }
+    </script>
   </head>
   <body>
     <div class="grid-container">
-      <h1 class="name">Daniel Horan</h1>
-      <blockquote class="quote">/* Highly motivated full-stack engineer and designer with over twenty years of web
-        development experience. A pragmatic engineer and passionate UX advocate who's attention to detail and design sense
+      <h1 class="name" onClick="switchTheme()">Daniel Horan</h1>
+      <blockquote class="quote">/* Highly motivated full-stack engineer and designer with over twenty years of experience. A pragmatic engineer and passionate UX advocate who's attention to detail and design sense
         whos motivation to build things the right way, craftsman who understands that code is meant to be read and that
         technical debt is costly. */
       </blockquote>
@@ -78,25 +82,25 @@
       </main>
 
       <aside class="aside">
-        <section class="skills">
+        <section>
           <h2>Skills</h2>
-          <ul>
-            <li class="pie pie-100" data-proficiency="100">HTML</li>
-            <li class="pie pie-100">CSS/SASS</li>
-            <li class="pie pie-90">JavaScript</li>
-            <li class="pie pie-80">Node/NPM</li>
-            <li class="pie pie-80">React</li>
-            <li class="pie pie-90">Design Systems</li>
-            <li class="pie pie-70">Accessibility</li>
-            <li class="pie pie-90">Git</li>
-            <li class="pie pie-70">Ruby on Rails</li>
-            <li class="pie pie-60">Java</li>
-            <li class="pie pie-80">PHP</li>
-            <li class="pie pie-60">MySQL/Postgres</li>
-            <li class="pie pie-70">Photoshop</li>
-            <li class="pie pie-80">Illustrator</li>
-            <li class="pie pie-60">Sketch/Figma</li>
-            <li class="pie pie-100">Cooking Mac & Cheese</li>
+          <ul class="skills">
+            <li data-proficiency="100">HTML</li>
+            <li data-proficiency="100">CSS/SASS</li>
+            <li data-proficiency="100">JavaScript</li>
+            <li data-proficiency="80">Node/NPM</li>
+            <li data-proficiency="80">React</li>
+            <li data-proficiency="90">Design Systems</li>
+            <li data-proficiency="70">Accessibility</li>
+            <li data-proficiency="90">Git</li>
+            <li data-proficiency="70">Ruby on Rails</li>
+            <li data-proficiency="60">Java</li>
+            <li data-proficiency="80">PHP</li>
+            <li data-proficiency="60">MySQL/Postgres</li>
+            <li data-proficiency="70">Photoshop</li>
+            <li data-proficiency="80">Illustrator</li>
+            <li data-proficiency="60">Sketch/Figma</li>
+            <li data-proficiency="100">Cooking Mac & Cheese</li>
           </ul>
         </section>
 
@@ -109,39 +113,19 @@
           </article>
         </section>
 
-        <section class="accomplishments">
+        <section>
           <h2>Accomplishments</h2>
-          <ul>
-            <li>Taught myself HTML+CSS over summer vacation and created my first website at age 15.</li>
-            <li>Created a clothing brand which has sold t-shirts to over 30 countries.</li>
-
+          <ul class="accomplishments">
+            <li>Taught myself HTML & CSS over summer vacation and created my first website at age 15.</li>
+            <li>Created a clothing brand which has sold t-shirts to people in over 30 countries.</li>
+            <li>Created this resume from scratch in less than two hours using only TextEdit and my knowledge of HTML/CSS: Check out the source code at <a href="https://github.com/unrefined/resume">github.com/unrefined/resume</a></li>
           </ul>
         </section>
 
-        <section class="references">
-          <h2>References</h2>
-          <div class="wrap">
-            <article>
-              <h3>Dylan Griffin</h3>
-              <h4>Sr. Engineer</h4>
-              <p>Twitter <span class="phone">617-308-4580</span></p>
-            </article>
-            <article>
-              <h3>Joshua Smith</h3>
-              <h4>------</h4>
-              <p>CVS Health <span class="phone">617-308-4580</span></p>
-            </article>
-            <article>
-              <h3>Adam Gelinas</h3>
-              <h4>Adv. Engineer</h4>
-              <p>----- <span class="phone">617-308-4580</span></p>
-            </article>
-          </div>
-        </section>
       </aside>
 
       <footer>
-        // 3 Pigeon Hill Drive, Grafton, MA 01519 • (508) 344-1969 • dhoran@me.com • dribbble.com/unrefined
+        // 3 Pigeon Hill Drive, Grafton, MA 01519 • (508) 344-1969 • <a href="mailto:dhoran@me.com">dhoran@me.com</a> • <a href="https://dribbble.com/unrefined">dribbble.com/unrefined</a>
       </footer>
     </div>
   </body>
