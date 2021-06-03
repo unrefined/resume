@@ -90,7 +90,7 @@ footer {
   grid-area: footer;
   color: var(--gray);
   border-top: 1px solid var(--gray);
-  padding-top: 2em;
+  padding-top: 1em;
   font-family: var(--type-mono);
   font-size: 0.875em;
   line-height: 2;
@@ -157,10 +157,6 @@ blockquote {
   font-family: var(--type-mono);
 }
 
-p {
-  font-size: .875em;
-}
-
 a, .link {
   color: var(--link-color);
   cursor: pointer;
@@ -207,9 +203,8 @@ p:not(:last-of-type) {
   position: relative;
 }
 
-.accomplishments li {
+.bio li {
   margin-bottom: 1em;
-  font-size: .875em;
 }
 
 [data-proficiency]::before {
@@ -289,7 +284,6 @@ p:not(:last-of-type) {
     display: inline;
   }
 
-
   footer > *:not(:first-child)::before {
     content: " • ";
   }
@@ -301,6 +295,7 @@ p:not(:last-of-type) {
   footer::after {
     content: ""
   }
+
 }
 
 @media print, screen and (min-width: 1000px) {
