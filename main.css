@@ -264,7 +264,7 @@ p:not(:last-of-type) {
     grid-template-rows: auto 1fr auto;
     gap: 2em 5em;
     grid-template-areas:
-      "name name name quote quote quote"
+      "name name quote quote quote quote"
       "main main main main aside aside"
       "footer footer footer footer footer footer";
   }
