@@ -21,15 +21,17 @@ Thanks for stopping by. Please take a look around. I hope that everything is to 
       rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script>
-      const switchTheme = () => {
+      const switchTheme = (e) => {
+        const toggle = document.getElementById('toggle');
+        toggle.innerText = toggle.innerText === 'light theme' ? 'dark theme' : 'light theme';
         document.body.className = document.body.className === '' ? 'dark' : '';
     }
     </script>
   </head>
   <body>
     <div class="grid-container">
-      <h1 class="name" onClick="switchTheme()">Daniel Horan</h1>
-      <blockquote class="quote">/* Highly motivated and pragmatic engineer with over twenty years of experience. UX evangelist who's attention to detail and design sense guides him to build things for the right reasons and a craftsman who understands that code is meant to be read and that and that technical debt is costly. (Why am I speaking in the third person?) */
+      <h1 class="name" onClick="switchTheme(event)">Daniel Horan</h1>
+      <blockquote class="quote">/* Highly motivated and pragmatic engineer with over twenty years of experience. UX evangelist who's attention to detail and design sense guides him to build things for the right reasons and a craftsman who understands that code is meant to be read and that and that technical debt is costly. Does not typically speak in the third person :) */
       </blockquote>
       <main class="main">
         <section>
@@ -85,7 +87,7 @@ Thanks for stopping by. Please take a look around. I hope that everything is to 
             <li data-proficiency="90">JavaScript</li>
             <li data-proficiency="70">Node/NPM</li>
             <li data-proficiency="70">React</li>
-            <li data-proficiency="90">Design Systems</li>
+            <li data-proficiency="100">Design Systems</li>
             <li data-proficiency="80">Screen Printing</li>
             <li data-proficiency="70">Accessibility</li>
             <li data-proficiency="30">Astrophysics</li>
@@ -99,7 +101,7 @@ Thanks for stopping by. Please take a look around. I hope that everything is to 
             <li data-proficiency="10">Ballroom Dancing</li>
             <li data-proficiency="80">Illustrator</li>
             <li data-proficiency="60">Sketch/Figma</li>
-            <li data-proficiency="100">Mac & Cheese</li>
+            <li data-proficiency="90">Kickball</li>
           </ul>
         </section>
 
@@ -117,7 +119,7 @@ Thanks for stopping by. Please take a look around. I hope that everything is to 
           <ul class="accomplishments">
             <li>Taught myself HTML & CSS over summer vacation and created my first website at age 15.</li>
             <li>Created a clothing brand which has sold t-shirts to people in over 30 countries.</li>
-            <li>Created this resume from scratch in less than two hours using only TextEdit and my knowledge of HTML/CSS: Check out the source code at <a href="https://github.com/unrefined/resume">github.com/unrefined/resume</a></li>
+            <li>Created this resume from scratch in less than two hours using only TextEdit and my knowledge of HTML/CSS: Check out the source code at <a href="https://github.com/unrefined/resume">github.com/unrefined/resume</a>. It even has a <span class="link" id="toggle" onclick="switchTheme(event, true)">dark theme</span></li>
           </ul>
         </section>
 
@@ -128,7 +130,6 @@ Thanks for stopping by. Please take a look around. I hope that everything is to 
         <span class="telephone">(508) 344-1969</span>
         <span><a href="mailto:dhoran@me.com">dhoran@me.com</a></span>
         <span><a href="https://dribbble.com/unrefined">dribbble.com/unrefined</a></span>
-        <span><span class="link" onClick="switchTheme()">Toggle Theme</span></span>
       </footer>
     </div>
   </body>

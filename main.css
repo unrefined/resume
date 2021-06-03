@@ -151,8 +151,9 @@ blockquote {
   font-family: var(--type-mono);
 }
 
-a {
+a, .link {
   color: var(--link-color);
+  cursor: pointer;
 }
 
 footer a, footer .link {
@@ -190,7 +191,6 @@ p:not(:last-of-type) {
 .skills li {
   display: flex;
   flex-direction: row;
-  /*align-items: center;*/
   margin-bottom: 0.5em;
   font-size: 1em;
   font-family: var(--type-mono);
@@ -299,7 +299,6 @@ p:not(:last-of-type) {
 }
 
 @media print, screen and (min-width: 1200px) {
-
   .skills {
     columns: 2;
   }
