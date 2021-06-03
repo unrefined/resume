@@ -3,7 +3,7 @@
   --white: #ffffff;
   --black: #333333;
   --gray: #878787;
-  --blue: #2991f6;
+  --blue: #1769b8;
   --green: #4b9f9b;
   --purple: #bd86bf;
   --orange: #f8bb3c;
@@ -25,8 +25,10 @@
     --white: #ececec;
     --gray: #a7a7a7;
     --green: #57b6b2;
-    --body-bg: var(--black);
-    --body-color: var(--white)
+    --blue: #2991f6;
+    --body-bg: #1b1d22;
+    --body-color: var(--white);
+    --link-color: var(--blue);
   }
 }
 
@@ -110,8 +112,12 @@ footer > * {
 h1 {
   font-family: var(--type-heading);
   font-size: 5em;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1;
+  color: var(--green);
+}
+
+h1 span {
   color: var(--green);
 }
 
@@ -149,6 +155,10 @@ blockquote {
   font-style: italic;
   line-height: 1.5;
   font-family: var(--type-mono);
+}
+
+p {
+  font-size: .875em;
 }
 
 a, .link {
@@ -199,6 +209,7 @@ p:not(:last-of-type) {
 
 .accomplishments li {
   margin-bottom: 1em;
+  font-size: .875em;
 }
 
 [data-proficiency]::before {
