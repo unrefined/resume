@@ -113,7 +113,7 @@ h1 {
   font-family: var(--type-heading);
   font-size: 5em;
   font-weight: 500;
-  line-height: 1;
+  line-height: 0.8;
   color: var(--green);
 }
 
@@ -312,13 +312,20 @@ p:not(:last-of-type) {
 
 
 @media print {
-  @page { size: landscape }
+  @page { size: landscape; }
   * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
   body {
     font-size: 10px;
+  }
+  .grid-container {
+    padding: 1em 1em;
+    grid-template-areas:
+      "name name name quote quote quote"
+      "main main main main aside aside"
+      "footer footer footer footer footer footer";
   }
 }
 
