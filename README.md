@@ -3,9 +3,11 @@ This resume was coded from scratch in a few hours to showcase my HTML and CSS sk
 
 ## Web View
 Responsive and complete with dark theme
-[View](https://unrefined.github.io/resume/)
+
+[View Resume](https://unrefined.github.io/resume/)
 
 ## PDF
 Created from printing the web view
+
 [Download](https://github.com/unrefined/resume/raw/main/Daniel_Horan_Resume.pdf)
 
