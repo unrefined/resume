@@ -3,5 +3,5 @@ The majority of this resume was coded from scratch in a few hours using only Tex
 
 [View Resume](https://unrefined.github.io/resume/)
 
-[View PDF](https://unrefined.github.io/resume/Daniel_Horan_Resume.pdf)
+[View PDF](https://github.com/unrefined/resume/raw/main/Daniel_Horan_Resume.pdf)
 
