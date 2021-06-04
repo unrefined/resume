@@ -213,9 +213,9 @@ p:not(:last-of-type) {
   content: "";
   display: block;
   flex: 0 0 auto;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 10em;
   margin-right: 0.75em;
 }
 
@@ -274,12 +274,6 @@ p:not(:last-of-type) {
     margin-bottom: 0.25em;
   }
 
-  [data-proficiency]::before {
-    width: 0.875em;
-    height: 0.875em;
-    margin-right: 0.75em;
-  }
-
   footer > * {
     display: inline;
   }
@@ -331,6 +325,13 @@ p:not(:last-of-type) {
   footer a, .link {
     color: inherit;
     text-decoration: none;
+  }
+
+  [data-proficiency]::before {
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+    top: 0.15rem;
   }
 }
 
