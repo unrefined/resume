@@ -327,5 +327,10 @@ p:not(:last-of-type) {
       "main main main main aside aside"
       "footer footer footer footer footer footer";
   }
+
+  footer a, .link {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
