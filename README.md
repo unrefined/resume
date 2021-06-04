@@ -1,7 +1,9 @@
 # Welcome to my digital resume
 This resume was coded from scratch in a few hours to showcase my HTML and CSS skills using only TextEdit. I challenged myself to see how quickly I could create something by relying only on my internal knowledge.
 
-Also, my previous resume was made in Illustrator and I no longer have it installed and I felt that this would be the fastest way to recreate it.
+Also, my previous resume was made in Adobe Illustrator which I no longer have installed and I felt that this would be the fastest way to recreate it.
+
+Enjoy!
 
 ## Web View
 Responsive and complete with dark theme
