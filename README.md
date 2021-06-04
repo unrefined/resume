@@ -1,7 +1,11 @@
 # Welcome to my digital resume
-The majority of this resume was coded from scratch in a few hours using only TextEdit as a challenge to see how quickly I could create something without having to google or use StackOverflow.
+This resume was coded from scratch in a few hours to showcase my HTML and CSS skills using only TextEdit as a challenge to see how quickly I could create something by relying only on my internal knowledge. 
 
-[View Resume](https://unrefined.github.io/resume/)
+## Web View
+Responsive and complete with dark theme
+[View](https://unrefined.github.io/resume/)
 
-[View PDF](https://github.com/unrefined/resume/raw/main/Daniel_Horan_Resume.pdf)
+## PDF
+Created from printing the web view
+[Download](https://github.com/unrefined/resume/raw/main/Daniel_Horan_Resume.pdf)
 
