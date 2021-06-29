@@ -1,7 +1,7 @@
 let hub = (() => {
 
-  const getUrl = 'https://candidate.hubteam.com/candidateTest/v3/problem/dataset?userKey=50b09a8023998702862558687c0b';
-  const postUrl = 'https://candidate.hubteam.com/candidateTest/v3/problem/result?userKey=50b09a8023998702862558687c0b';
+  const getUrl = '';
+  const postUrl = '';
 
   let partnerList;
 
